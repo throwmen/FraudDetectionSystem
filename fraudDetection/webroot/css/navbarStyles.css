@@ -1,0 +1,141 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Base */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.938rem;
+  background-color: white;
+}
+
+/* Navbar customization */
+.navbar {
+  height: 3.5rem;
+  border-bottom: 2px solid black;
+  box-shadow: 0 2px 16px hsla(220, 32%, 8%, 0.3);
+}
+
+.navbar-brand img {
+  width: 100px;
+  height: auto;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler .ri-menu-line,
+.navbar-toggler .ri-close-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.25rem;
+  transition: opacity 0.1s, transform 0.4s;
+}
+
+.navbar-toggler .ri-close-line {
+  opacity: 0;
+}
+
+.navbar-toggler.collapsed .ri-menu-line {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.navbar-toggler.collapsed .ri-close-line {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.navbar-toggler:not(.collapsed) .ri-menu-line {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.navbar-toggler:not(.collapsed) .ri-close-line {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+/* Nav items */
+.nav-link {
+  color: black;
+  font-weight: 600;
+  padding: 1.25rem 1.5rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.nav-link:hover {
+  color: #2563eb;
+}
+
+/* Buttons */
+.btn-custom {
+  background-color: #2563eb;
+  color: white;
+  border: 2px solid #2563eb;
+  padding: 0.5rem 1.5rem;
+  border-radius: 18px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: transparent;
+  color: #2563eb;
+}
+
+/* Mobile menu */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 16px hsla(220, 32%, 8%, 0.3);
+  }
+
+  .btn-custom {
+    display: block;
+    width: calc(100% - 3rem);
+    margin: 0.5rem 1.5rem;
+    text-align: center;
+  }
+
+  .nav-link:hover {
+    color: white;
+    background-color: #2563eb;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .btn-container {
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+  }
+}
