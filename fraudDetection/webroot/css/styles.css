@@ -1,0 +1,69 @@
+#home {
+    margin-top: 15rem;
+}
+
+h1 {
+    color: #2563eb;
+}
+
+body {
+    color: black;
+}
+
+#welcome-text {
+    width: 70%;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+#home-image-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mobile-background-animation {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    display: none;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+#mobile-background-animation lottie-player {
+    width: 100%;
+    height: 100%;
+}
+
+#home-content {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 991.98px) {
+    #mobile-background-animation {
+        display: block;
+    }
+
+    #home {
+        background-size: cover;
+        background-position: center;
+    }
+
+    #home-content {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #home-image-col {
+        display: none;
+    }
+
+    #welcome-text {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+}
