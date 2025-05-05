@@ -23,7 +23,7 @@ body {
 }
 
 #mobile-background-animation {
-    position: fixed;
+    position: absolute;
     inset: 0;
     z-index: 0;
     display: none;
@@ -33,7 +33,7 @@ body {
 
 #mobile-background-animation lottie-player {
     width: 100%;
-    height: 100%;
+    height: 50%;
 }
 
 #home-content {
@@ -41,9 +41,26 @@ body {
     z-index: 1;
 }
 
+#mission-text{
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+#mission {
+    background-image: url('/img/missionBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 @media (max-width: 991.98px) {
     #mobile-background-animation {
         display: block;
+    }
+
+    #mission-text{
+        padding-left: 0;
+        padding-right: 0;
     }
 
     #home {

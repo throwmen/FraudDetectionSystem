@@ -12,16 +12,16 @@
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Mission</a>
+                    <a class="nav-link" href="#mission">Mission</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">How</a>
+                    <a class="nav-link" href="#how">How</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About us</a>
+                    <a class="nav-link" href="#about">About us</a>
                 </li>
             </ul>
             

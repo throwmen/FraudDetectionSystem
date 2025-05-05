@@ -9,13 +9,12 @@
     <?php echo $this->Html->css('styles'); ?>
     <?php echo $this->Html->css('https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css');?>
     <?php echo $this->Html->script('https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js'); ?>
-
 </head>
 <body>
     <header>
         <?php echo $this->element('navbar'); ?>
     </header>
-    <section id="home" class="container position-relative overflow-hidden">
+    <section id="home" class="min-vh-100 container position-relative overflow-hidden">
         <div id="mobile-background-animation">
                 <lottie-player
                     src="/animations/welcomeBackground.json"
@@ -42,7 +41,11 @@
             </div>
         </div>
     </section>
-    <section id="mission" class="container">
+    <section id="mission" class="min-vh-100 container text-center d-flex align-items-center rounded-5">
+        <div>
+            <h1 class="display-1 fw-bold">Mission</h1>
+            <p id="mission-text">Our mission is to empower businesses with cutting-edge fraud detection, ensuring security, trust, and seamless transactions through AI-driven insights.</p>
+        </div> 
     </section>
     <section id="how"></section>
     <section id="aboutUs"></section>
