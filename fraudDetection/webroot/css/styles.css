@@ -53,6 +53,63 @@ body {
     background-repeat: no-repeat;
 }
 
+#how {
+    padding: 5rem 0;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.how-title {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.how-card {
+    background: linear-gradient(360deg, #013276, #1B6EF3);
+    border-radius: 100px 100px 30px 30px;
+    padding: 0 0 0 0;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    height: 450px;
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.how-img-container {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 5px solid #0047AB;
+}
+
+.how-img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.how-description{
+    color: white;
+    font-weight: 300;
+}
+
 @media (max-width: 991.98px) {
     #mobile-background-animation {
         display: block;

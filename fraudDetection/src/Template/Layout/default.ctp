@@ -47,7 +47,32 @@
             <p id="mission-text">Our mission is to empower businesses with cutting-edge fraud detection, ensuring security, trust, and seamless transactions through AI-driven insights.</p>
         </div> 
     </section>
-    <section id="how"></section>
+    <section id="how" class="min-vh-100 container align-items-center">
+        <h1 class="display-1 fw-bold mb-5">How It Works</h1>
+        <div class="row justify-content-center">
+            <div class="how-card col-10 col-sm-6 col-md-4 mb-5">
+                <div class="how-img-container">
+                    <img class="how-img" src="/img/uploadImage.png" alt="Upload">
+                </div>
+                <h3 class="how-title">Upload</h3>
+                <p class="how-description">Seamlessly upload your data through our secure platform for instant analysis.</p>
+            </div>
+            <div class="how-card col-10 col-sm-6 col-md-4 mb-5">
+                <div class="how-img-container">
+                    <img class="how-img" src="/img/analyzeImage.png" alt="Analyze">
+                </div>
+                <h3 class="how-title">Analyze</h3>
+                <p class="how-description">Our AI engine processes your data, identifying patterns and potential fraud risks.</p>
+            </div>
+            <div class="how-card col-10 col-sm-6 col-md-4 mb-5">
+                <div class="how-img-container">
+                    <img class="how-img" src="/img/actImage.png" alt="Act">
+                </div>
+                <h3 class="how-title">Act</h3>
+                <p class="how-description">Receive actionable insights and take immediate steps to protect your business.</p>
+            </div>
+        </div>
+    </section>
     <section id="aboutUs"></section>
 
     <?php echo $this->Html->script('https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js'); ?>
