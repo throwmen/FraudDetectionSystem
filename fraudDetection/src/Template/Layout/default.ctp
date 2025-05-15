@@ -7,6 +7,7 @@
     <?php echo $this->Html->css('https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css'); ?>
     <?php echo $this->Html->css('navbarStyles'); ?>
     <?php echo $this->Html->css('styles'); ?>
+    <?php echo $this->Html->css('footerStyles'); ?>
     <?php echo $this->Html->css('https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css');?>
     <?php echo $this->Html->script('https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js'); ?>
 </head>
@@ -73,8 +74,32 @@
             </div>
         </div>
     </section>
-    <section id="aboutUs"></section>
-
+    <section id="about" class="min-vh-100 container align-items-center">
+        <h1 class="display-1 fw-bold text-center">About Us</h1>
+        <div class="card-container">
+            <div class="card">
+                <img class="devPhoto" src="/img/" alt="LuisMi">
+                <div class="card-body">
+                    <h3 class="about-us-title">Luis Miguel</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img class="devPhoto" src="/img/JuanOliveros.png" alt="JuanDa">
+                <div class="card-body">
+                    <h3 class="about-us-title">Juan David Oliveros Morales</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img class="devPhoto" src="/img/" alt="Pj">
+                <div class="card-body">
+                    <h3 class="about-us-title">Pedro Juan Henao</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <?php echo $this->element('footer'); ?>
+    </footer>
     <?php echo $this->Html->script('https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js'); ?>
 </body>
 </html>

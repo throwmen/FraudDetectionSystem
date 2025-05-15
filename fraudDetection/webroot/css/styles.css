@@ -110,6 +110,22 @@ body {
     font-weight: 300;
 }
 
+.card{
+    color: white;
+    background-color: #1E1E1E;
+    max-width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 @media (max-width: 991.98px) {
     #mobile-background-animation {
         display: block;
